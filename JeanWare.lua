@@ -7,7 +7,7 @@ task.wait(3)
 msg:Destroy()
 
 -- Load UI Manager first
-loadstring(game:HttpGet("https://raw.githubusercontent.com/YOUR_USERNAME/UniversalPremium/main/Modules/UIManager.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jean347-roblox/Universal-premium/main/Modules/UIManager.lua"))()
 
 -- Load features in sequence
 local modules = {
@@ -20,6 +20,6 @@ local modules = {
 
 for _, module in ipairs(modules) do
     pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/YOUR_USERNAME/UniversalPremium/main/Modules/" .. module .. ".lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/jean347-roblox/Universal-premium/main/Modules/" .. module .. ".lua"))()
     end)
 end
